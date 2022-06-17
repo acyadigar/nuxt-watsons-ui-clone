@@ -71,6 +71,26 @@
   cursor: pointer;
 }
 
+.basket {
+  position: relative;
+}
+
+.basket span {
+  position: absolute;
+  left: 10px;
+  top: -9px;
+  width: 8px;
+  height: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--error);
+  color: white;
+  font-size: 12px;
+  border-radius: 40px;
+  padding-inline: 4px;
+}
+
 .header-sm {
   display: flex;
   padding-inline: 1rem;
