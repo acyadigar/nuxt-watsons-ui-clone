@@ -1,7 +1,7 @@
 <template>
   <div>
-    <TopBar />
     <Menu :activeBurgerMenu='activeBurgerMenu' @close='toggle' />
+    <TopBar />
     <Header @toggle='toggle'/>
       <Nuxt />
     <Footer />
