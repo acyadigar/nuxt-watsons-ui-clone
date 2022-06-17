@@ -41,10 +41,11 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv'
   ],
 
   axios: {
-    baseURL: 'https://dummyjson.com/',
+    baseURL: process.env.BASE_URL,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
