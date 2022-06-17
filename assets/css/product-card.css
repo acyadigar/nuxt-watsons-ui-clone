@@ -33,12 +33,9 @@
 }
 
 .product-card .info p {
-  margin: .3rem 0;
+  line-height: 24px;
+  margin: 0rem 0;
   padding: 0;
-}
-
-.product-card .info p:last-child {
-  margin-bottom: 0;
 }
 
 .product-card .actions {
@@ -59,8 +56,8 @@
   width: 100%;
 }
 
-.product-card .add-btn > * {
-  margin-inline: 4px;
+.product-card .add-btn > svg {
+  margin-right: .25rem;
 }
 
 .animated-actions {

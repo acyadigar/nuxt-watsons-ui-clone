@@ -6,12 +6,13 @@
   text-align: center;
   color: var(--secondary);
   font-size: 20px;
-  margin-block: 3rem 1rem;
+  margin-block: 1rem;
 }
 
 .featured .product-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   gap: 1rem;
   padding-inline: 1rem;
 }
