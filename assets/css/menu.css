@@ -55,7 +55,7 @@
 
  .burger-menu .sub-menu {
   width: 100vw;
-  height: 125vh;
+  height: calc(100vh - 56px);
   overflow: hidden;
   visibility: hidden;
   transition: all .5s ease-in-out;

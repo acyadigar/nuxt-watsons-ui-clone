@@ -18,6 +18,8 @@ export default {
   methods: {
     toggle() {
       this.activeBurgerMenu = !this.activeBurgerMenu
+      if (this.activeBurgerMenu) return document.body.style.overflowY = 'hidden'
+      document.body.style.overflowY = 'auto'
     }
   }
 }
