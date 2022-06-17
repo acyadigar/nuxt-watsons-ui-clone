@@ -1,0 +1,31 @@
+@import "./fonts.css";
+@import "./colors.css";
+@import "./top-bar.css";
+@import "./menu.css";
+@import "./header.css";
+@import "./featured.css";
+@import "./product-card.css";
+@import "./banner.css";
+@import "./categories.css";
+@import "./category-card.css";
+@import "./newsletter.css";
+@import "./footer.css";
+@import "./slider.css";
+
+ul,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .8;
+}

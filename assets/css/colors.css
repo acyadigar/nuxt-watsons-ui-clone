@@ -1,0 +1,28 @@
+:root {
+  --white20: rgba(255, 255, 255, 0.2);
+  --white90: rgba(255, 255, 255, 0.9);
+  --titanwhite: #F2F0FF;
+  --snow: #FAFCFF;
+  --smoke: #ECECEC;
+  --smoke20: rgba(236, 236, 236, 0.2);
+  --smoke30: rgba(236, 236, 236, 0.3);
+  --smoke16: rgba(236, 236, 236, 0.16);
+  --smoke50: rgba(236, 236, 236, 0.5);
+  --coal: #2a2a48;
+  --coal60: rgba(42, 42, 72, 0.6);
+  --gray: #8493A8;
+  --gray40: rgba(132, 147, 168, 0.4);
+  --graphene: #485363;
+  --darkgray: #505357;
+  --black60: rgba(0, 0, 0, 0.6);
+  --black80: rgba(0, 0, 0, 0.8);
+  --primary: #FF27AD;
+  --primary10: rgba(255, 39, 172, 0.1);
+  --darkprimary: #F1129C;
+  --secondary: #0099A8;
+  --secondary10: rgba(0, 154, 168, 0.1);
+  --darksecondary: #138A96;
+  --success: #32AD54;
+  --warning: #FFD467;
+  --error: #FA4C44;
+}

@@ -1,0 +1,39 @@
+.featured {
+  margin-block: 1rem;
+}
+
+.featured .title {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 20px;
+  margin-block: 3rem 1rem;
+}
+
+.featured .product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .featured {
+    padding-inline: 7.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .featured .title {
+    margin-bottom: 2.5rem;
+  }
+
+  .featured .product-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .featured {
+    padding-inline: 13.75rem;
+  }
+}

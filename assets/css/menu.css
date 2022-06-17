@@ -1,0 +1,117 @@
+.menu-head,
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  margin-inline: 1rem;
+  border-bottom: 1px solid var(--smoke);
+  color: var(--coal);
+  font-weight: 500;
+  position: relative;
+}
+
+.menu-item:nth-child(7) {
+  border-bottom: none;
+}
+
+.menu-head {
+  box-sizing: border-box;
+  height: 56px;
+  margin-inline: 0;
+  padding-inline: 1rem;
+  background-color: var(--titanwhite);
+  border-top: none;
+  border-bottom: none;
+  font-size: 20px;
+}
+
+.right {
+  margin-inline: 0;
+  padding: 1rem;
+  background-color: var(--smoke30);
+  justify-content: right;
+}
+
+.right > span {
+  margin-right: .5rem;
+}
+
+.menu-item > label {
+  text-align: right;
+}
+
+.burger-menu {
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100vw);
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  visibility: hidden;
+}
+
+ .burger-menu .sub-menu {
+  width: 100vw;
+  height: 125vh;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  position: fixed;
+  left: 0;
+  top: 56px;
+  z-index: 100;
+  background-color: white;
+  transform: translateX(-100vw);
+}
+
+.burger-menu .sub-menu-item {
+  text-align: right;
+  margin: 1rem;
+  border-bottom: 1px solid var(--smoke);
+}
+
+.burger-menu .sub-menu-head {
+  border-radius: 6px;
+  padding: .5rem;
+  background-color: var(--smoke30);
+}
+
+.burger-menu .sub-menu-item svg {
+  margin-inline: .5rem;
+} 
+
+.burger-menu .sub-menu .links {
+  margin-top: 1rem;
+}
+
+.burger-menu .sub-menu .links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 400;
+  color: var(--graphene);
+  font-size: 16px;
+}
+
+.burger-menu .sub-menu .links ul li {
+  margin-block: .25rem;
+}
+
+.burger-menu .sub-menu .links ul li:last-child {
+  margin-bottom: 1rem;
+}
+
+.burger-menu #toggleSubMenu:checked + .sub-menu,
+.burger-menu .sub-menu.open,
+.active-burger-menu {
+  visibility: visible;
+  transform: translateX(0);
+  overflow-y: auto;
+}
+
+#toggleSubMenu {
+  display: none;
+}
