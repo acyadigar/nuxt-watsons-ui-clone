@@ -29,7 +29,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vue-carousel'
+    '~/plugins/vue-carousel',
+    '~/plugins/axios'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -45,11 +46,11 @@ export default {
     '@nuxtjs/axios',
   ],
 
-  axios: {
-    baseURL: process.env.BASE_URL,
-  },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  env: {
+    BASE_URL: process.env.BASE_URL
   }
 }
