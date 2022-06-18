@@ -112,6 +112,11 @@
   align-items: center;
 }
 
+.header-sm .basket span {
+  top: -.8rem;
+  left: -.5rem;
+}
+
 @media (min-width: 1300px) {
   .header-sm {
     display: none;
