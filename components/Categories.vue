@@ -1,7 +1,9 @@
 <template>
   <div class="categories">
     <div class="title">
-      <strong>Featured categories</strong>
+      <div class="divider"></div>
+        <strong>Featured categories</strong>
+      <div class="divider"></div>
     </div>
     <div class="category-list">
       <CategoryCard v-for="category in categories" :category="category" :key="categories.indexOf(category)"/>

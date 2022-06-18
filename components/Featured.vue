@@ -1,7 +1,9 @@
 <template>
   <div class="featured">
     <div class="title">
+      <div class="divider"></div>
       <strong>Featured products</strong>
+      <div class="divider"></div>
     </div>
     <div class="product-list">
       <ProductCard v-for="product in products" :product="product" :key="product.id"/>

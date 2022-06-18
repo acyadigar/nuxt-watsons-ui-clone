@@ -1,12 +1,21 @@
-.featured {
-  margin-block: 1rem;
-}
-
 .featured .title {
   text-align: center;
   color: var(--secondary);
   font-size: 20px;
-  margin-block: 1rem;
+  margin-block: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured .title strong {
+  width: 100%;
+}
+
+.featured .divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary10);
 }
 
 .featured .product-list {
@@ -23,13 +32,36 @@
     margin-bottom: 2.5rem;
   }
 
-  .featured .title {
-    margin-bottom: 2.5rem;
+  .featured .title strong {
+    width: 55%;
+  }
+
+  .featured .divider {
+    width: 100%;
   }
 
   .featured .product-list {
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .featured .product-list {
+    padding-bottom: 1rem;
+  }
+  
+  .featured .title {
+    padding-inline: 1rem;
+    margin-block: 1rem;
+  }
+
+  .featured .divider {
+    width: 33.33%;
+  }
+
+  .featured .title strong {
+    width: 85%;
   }
 }
 
